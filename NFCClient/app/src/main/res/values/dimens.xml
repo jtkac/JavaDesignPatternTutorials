@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="toolbar_icon_size">40dp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_18sp">18sp</dimen>
+</resources>

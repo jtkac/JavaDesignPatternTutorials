@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">NFCClient</string>
+    <string name="hello_world">Hello World</string>
+    <string name="yes_flip_click">Yes Flip Click</string>
+    <string name="no_flip_click">No Flip Click</string>
+    <string name="page_one_string_adapter_example_e">Page 1</string>
+
+    <string name="value_1">Value 1</string>
+    <string name="value_2">Value 2</string>
+    <string name="value_3">Value 3</string>
+    <string name="value_4">Value 4</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="page_two_string_adapter_example_e">Page 2</string>
+    <string name="flip_text">Flip Text Driven From Cache Layer</string>
+    <string name="select_connection">Select A Connection To Start</string>
+    <string name="group_info_error">Failed to retrieve group info</string>
+    <string name="start_server">Click To Start A Single Server</string>
+    <string name="password_message">Enter a password for your server</string>
+    <string name="server_name_message">Enter A Name For The Server</string>
+    <string name="active_servers">Active Servers</string>
+    <string name="nothing_to_see_here">Nothing to see here</string>
+    <string name="select_directory">Select Directory</string>
+
+</resources>

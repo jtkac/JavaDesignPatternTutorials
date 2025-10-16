@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="cache"
+            type="cache.CacheExampleF" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="@{cache.saveVisibilityStatus}"
+                    android:onClickListener="@{cache.saveClickListener}"
+                    android:text="@string/save"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="@{cache.deleteVisibilityStatus}"
+                    android:onClickListener="@{cache.deleteClickListener}"
+                    android:text="@string/delete"/>
+            </LinearLayout>
+
+        </Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClickListener="@{cache.saveButtonToggleListener}"
+                    android:text="Toggle Save Visibility Based On Interface In Cache"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClickListener="@{cache.deleteButtonToggleListener}"
+                    android:text="Toggle Delete Visibility Based On Interface In Cache"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

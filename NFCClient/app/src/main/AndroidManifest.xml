@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc" android:required="true"
+        tools:ignore="UnnecessaryRequiredFeature" />
+    <uses-feature android:name="android.hardware.wifi.direct" android:required="true"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:required="false"
+        android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission
+        android:required="false"
+        android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<!--
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"-->
+    <application
+        android:name="application.ApplicationExtension"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/Theme.NFCClient">
+
+        <activity
+            android:name=".ExampleActivityA"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ExampleActivityB"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ExampleActivityC"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+        <activity
+            android:name=".ExampleActivityD"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ExampleActivityE"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+        <activity
+            android:name=".ExampleActivityF"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".ExampleActivityG"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ExampleActivityH"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".ExampleActivityI"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

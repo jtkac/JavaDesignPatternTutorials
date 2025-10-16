@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        data tags exist in layout and can have bindable cache layer explicitly declared
+        upon specific declaration can automatically adjust with the cache layer
+        may also declare adapters with @Bindable annotation and have adapters auto-shift
+    -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<!--            Extra Layout elements here-->
+            <TextView
+                android:id="@+id/aea_text_hello_world"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world" />
+        </LinearLayout>
+    </ScrollView>
+</layout>
